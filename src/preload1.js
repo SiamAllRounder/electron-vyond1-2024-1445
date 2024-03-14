@@ -2,6 +2,7 @@
   window.addEventListener("DOMContentLoaded", () => {
     const vyondEmail = "sour.beaver4846@maildrop.cc";
     const vyondPass = "FmD$5J#a-rHugyd";
+    const vyondOTP = 848242;
 
     console.log(process.pid);
     setInterval(() => {
@@ -24,6 +25,12 @@
       document
         .querySelector(
           "#app > div > div.T8Scyzh0So6HdB0_L3oz > div > div > div.gnkOo_MYPvduH8ckQYyx > button.avDWLsRJOK68Ry_otoAs.YC0YoDtioPjc9t0wtr42.Xsagb8QoVi2We7qdrHw_.xkvrxKW6aPJexIpz35JZ"
+        )
+        .click();
+      document.querySelectorAll(".G_nFWQ39hZv0XxCeAkwA")[0].value = vyondOTP;
+      document
+        .querySelector(
+          "#app > div > div.btgDOBNRGaZBizqStCQ0 > div > form > div:nth-child(4) > button"
         )
         .click();
 

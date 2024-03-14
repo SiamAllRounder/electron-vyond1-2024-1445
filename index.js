@@ -1,7 +1,7 @@
 const { app, BrowserWindow, Menu, ipcMain } = require("electron");
 const path = require("path");
 // console.log(app.log)
-// Menu.setApplicationMenu(null);
+Menu.setApplicationMenu(null);
 
 let mainWindow;
 
@@ -33,6 +33,9 @@ const createWindow = () => {
     // List of blocked URLs
     // const blockedUrls = ['6sense.com', 'amplitude.com', '*.6sc.co'];
     const blockedUrls = [
+      'epsilon.6sense.com',
+      '6sense.com',
+      'sentry.io',
       'https://app.vyond.com/v2/subscription',
       'https://app.vyond.com/v2/security',
       'https://app.vyond.com/v2/groups/list',
@@ -78,6 +81,7 @@ ipcMain.handle("new-window", () => {
   childWindow.loadURL("https://www.vyond.com/login").then(() => {
     const currentURL = mainWindow.webContents.getURL();
     console.log(currentURL);
+    console.log(childWindow)
   });
 
   childWindow.on("ready-to-show", () => {
