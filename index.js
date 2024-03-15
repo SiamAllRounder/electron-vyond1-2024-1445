@@ -36,11 +36,12 @@ const createWindow = () => {
       'epsilon.6sense.com',
       '6sense.com',
       'sentry.io',
-      'https://app.vyond.com/v2/subscription',
-      'https://app.vyond.com/v2/security',
-      'https://app.vyond.com/v2/groups/list',
-      'https://app.vyond.com/v2/users/list',
-      'https://app.vyond.com/v2/profile', 
+      'app.vyond.com/v2/subscription',
+      'app.vyond.com/v2/security',
+      'app.vyond.com/v2/groups/list',
+      'app.vyond.com/v2/users/list',
+      'app.vyond.com/v2/profile', 
+      'app.vyond.com/v2/logout',
       'amplitude.com'
     ];
 
@@ -54,7 +55,7 @@ const createWindow = () => {
     }
   });
  
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // Load your initial URL
   /* mainWindow.loadURL("https://www.vyond.com/login").then(() => {
